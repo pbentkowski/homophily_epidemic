@@ -23,42 +23,6 @@ import numpy as np
 from joblib import Parallel, delayed
 
 
-def SBM_own(n, pref_matrix, block_sizes):
-    """
-
-
-    Parameters
-    ----------
-    n : TYPE
-        DESCRIPTION.
-    pref_matrix : TYPE
-        DESCRIPTION.
-    block_sizes : TYPE
-        DESCRIPTION.
-
-    Returns
-    -------
-    TYPE
-        DESCRIPTION.
-
-    """
-    nn = block_sizes[0]
-
-    def rand_adj(size, p):
-        random_matrix = (np.random.rand(size, size) < p).astype(int)
-        np.fill_diagonal(random_matrix, 0)
-        symmetric_matrix = np.triu(random_matrix)  # get upper triangle
-        symmetric_matrix += symmetric_matrix.T     # Add transposition
-        return symmetric_matrix
-
-    A = rand_adj(nn, pref_matrix[0][0])
-    B = rand_adj(nn, pref_matrix[0][1])
-    D = rand_adj(nn, pref_matrix[0][0])
-
-    combined_matrix = np.block([[A, B], [B, D]])
-    return ig.Graph.Adjacency(combined_matrix, mode="undirected")
-
-
 def SBMgenerator(N=(50, 50), asymetry=1.0, mean_degree=4):
     """
     Creates a stochastic block model (SBM) graph:
