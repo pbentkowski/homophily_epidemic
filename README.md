@@ -1,5 +1,5 @@
 # Impact of homophily in adherence to anti-epidemic measures on the spread of infectious diseases in social networks
-[Code for the paper: Impact of homophily in adherence to anti-epidemic measures on the spread of infectious diseases in social networks](https://arxiv.org/html/2507.13848v1)
+Code for a paper: [Bentkowski P, Gubiec T. Impact of Homophily in Adherence to Anti-Epidemic Measures on the Spread of Infectious Diseases in Social Networks. Entropy. 2025; 27(10):1071. https://doi.org/10.3390/e27101071 ](https://www.mdpi.com/1099-4300/27/10/1071)
 
 **The simulation are in file `simulations.py` that creates a bundle of simulations with fixed *eta* and *delta* values.**
 
