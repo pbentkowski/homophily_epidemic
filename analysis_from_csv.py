@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Doc string here, please...
-
-Created on Fri Nov 18 16:25:32 2022
+Takes the bundle of simulations created by `simulation.py` and calculates
+statistics from that bundle. And does some plots.
 
 @author: Piotr Bentkowski
 """
