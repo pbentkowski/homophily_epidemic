@@ -7,10 +7,8 @@ Impact of homophily in adherence to anti-epidemic measures on
 the spread of infectious diseases in social networks
 
 Piotr Bentkowski, Tomasz Gubiec
+https://www.mdpi.com/1099-4300/27/10/1071
 
-https://arxiv.org/html/2507.13848v1
-
-@author: Piotr Bentkowski - bentkowski.piotr@gmail.com
 """
 import copy
 import json
