@@ -4,7 +4,7 @@
 Script for vidualising results after running the analysis-form_csv.py
 created tables with processed results.
 
-@author: Piotr Bentkowski - bentkowski.piotr@gmail.com
+@author: Piotr Bentkowski
 """
 import matplotlib
 import pandas as pd
