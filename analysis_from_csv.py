@@ -5,7 +5,7 @@ Doc string here, please...
 
 Created on Fri Nov 18 16:25:32 2022
 
-@author: Piotr Bentkowski - bentkowski.piotr@gmail.com
+@author: Piotr Bentkowski
 """
 import os
 import glob
