@@ -665,7 +665,7 @@ def plot_violin_R(res, simParams, pSI_psi, pSI_ne, y_min=0, y_max=0.6):
     pSI = pSI_psi[0]
     eff_0 = pSI_ne[0][0]
     eff_1 = pSI_ne[0][1]
-    xx = np.array(range(0, 10))
+    xx = np.arange(len(asym))
     # Prepping compliant data
     stacked_dd_vac = []
     mean_dd_compl = []
@@ -698,7 +698,7 @@ def plot_violin_R(res, simParams, pSI_psi, pSI_ne, y_min=0, y_max=0.6):
         else:
             mean_dd_noncpl.append(np.nan)
     mean_dd_noncpl = np.array(mean_dd_noncpl)
-    R_noncpl = pd.DataFrame(res['R_noncpl'].values / simParams['N_compliant'],
+    R_noncpl = pd.DataFrame(res['R_noncpl'].values / simParams['N_non_compl'],
                             columns=['Fraction'])
     R_noncpl['Asymmetry'] = res['asymmetry'].values
     R_noncpl['Group'] = 'non-compliant'
